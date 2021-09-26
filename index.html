@@ -22,7 +22,9 @@
           </li>
         </ul>
         <ul class="navigation-user navigation-list">
-          <a class="header-phone" href="tel:+78005558628">+7 800 555 86 28</a>
+          <li class="navigation-list">
+            <a class="header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </li>          
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -49,15 +51,15 @@
             <h2 class="product-name">Нежный пломбир с клубничным джемом</h2>
             <p class="product-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p> 
             <a class="product-order-button" href="#">Заказать</a>
-            <img class="product-slider-photo" src="">
+            <img class="product-slider-photo" src="" alt="Нежный пломбир с клубничным джемом">
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущее мороженное</span>
             </button>
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующее мороженное</span>
             </button>
-            <img class="product-slider-photo-next" src="">
-            <img class="product-slider-photo-next" src="">
+            <img class="product-slider-photo-next" src="" alt="Сливочное мороженое со вкусом банана">
+            <img class="product-slider-photo-next" src="" alt="Карамельный пломбир с маршмеллоу">
           </li>
           <li class="main-product-item">
             <h2 class="product-name">Сливочное мороженое со вкусом банана</h2>
@@ -70,8 +72,8 @@
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующее мороженное</span>
             </button>
-            <img class="product-slider-photo-next" src="">
-            <img class="product-slider-photo-next" src="">
+            <img class="product-slider-photo-next" src="" alt="Карамельный пломбир с маршмеллоу">
+            <img class="product-slider-photo-next" src="" alt="Нежный пломбир с клубничным джемом">
           </li>
           <li class="main-product-item">
             <h2 class="product-name">Карамельный пломбир с маршмеллоу</h2>
@@ -84,11 +86,11 @@
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующее мороженное</span>
             </button>
-            <img class="product-slider-photo-next" src="">
-            <img class="product-slider-photo-next" src="">
+            <img class="product-slider-photo-next" src="" alt="Нежный пломбир с клубничным джемом">
+            <img class="product-slider-photo-next" src="" alt="Сливочное мороженое со вкусом банана">
           </li>
         </ul>
-        <ol cclass="products-list-pagination">
+        <ol class="products-list-pagination">
           <li class="product-item">
             <button class="product-list-pagiation-button product-list-pagination-button-current" type="button">
               <span class="visually-hidden">Мороженко 1</span>
@@ -130,14 +132,14 @@
         <h2 class="gift-title">Заказывайте мороженое и получайте подарки!</h2>
         <div class="gift">
           <h3 class="gift-title">Малинка даром</h3>
-          <p class="gift-description"></p>
-          <a сlass="get-gift-button" href="#">Хочу подарок</a>
+          <p class="gift-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="get-gift-button" href="#">Хочу подарок</a>
           <img class="gift-photo" src="" alt="Малинка">
         </div>
         <div class="gift">
           <h3 class="gift-title">Маршмеллоу даром</h3>
-          <p class="gift-description"></p>
-          <a сlass="get-gift-button" href="#">Хочу подарок</a>
+          <p class="gift-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <a class="get-gift-button" href="#">Хочу подарок</a>
           <img class="gift-photo" src="" alt="Маршмеллоу">
         </div>
       </section>
@@ -223,7 +225,7 @@
           <label class="subscription-description" for="subscription-mail">Подпишитесь на нашу сладкую рассылку и будьте всегда
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
             <input type="email" id="subscription-mail" required>
-            <button class="subscription-button" type="input">Записаться</button>
+            <button class="subscription-button" type="submit">Записаться</button>
         </form>
       </section>
       <section class="delivery">
@@ -245,6 +247,7 @@
             <p class="delivery-form-phone">
               <span class="form-label form-label-icon">
                 <label for="delivery-phone">Телефон</label>
+              </span>
               <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
             </p>
             <p class="delivery-form-address">
@@ -300,15 +303,16 @@
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
             <a href="#">
-              <span class="info-partners">Для поставщиков</span>
+              <em class="info-partners">Для поставщиков</em>
             </a>
           </li>
-          <li class="footer-menu-item">Наши документы</li>
-          <li class="footer-menu-item">О производстве</li>
-          <li class="footer-menu-item">Экологические стандарты</li>
+          <li class="footer-menu-item"><a href="#"> Наши документы</a></li>
+          <li class="footer-menu-item"><a href="#">О производстве</a></li>
+          <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
         </ul>
       </section>
       <section class="made-in">
+        <h2 class="visually-hidden">Разработчик сайта</h2>
         <img class="logo-htmlacademy" src="#" alt="Логотип HtmlAcademy">
         <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
       </section>
