@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal ;
+    font-weight: normal;
+    font-display: swap;
+    src: url("/fonts/inter-400.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url("/fonts/inter-900.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/inter-900.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    background: #FEAFC3;
+    color: #2D3440;
+}
+
+.advantages {
+    background: white url("/img/main-page/advantages-border.jpg");
+    width: 1170px;
+    height: 480px;
+}
+
+.blog {
+    background:white url("/img/main-page/blog-bg.jpg") no-repeat;
+    width: 570px;
+    height: 216px;
+    border-radius: 16px;
+}
+
+.subscription {
+    background:white url("/img/main-page/subscription-bg.jpg") no-repeat;
+    width: 570px;
+    height: 220px;
+    border-radius: 16px;
+}
+
+.delivery {
+    background:white url("/img/main-page/delivery-bg.jpg") no-repeat;
+    width: 1170px;
+    height: 534px;
+    border-radius: 16px;
+}
+
+.feedback {
+    background:white url("/img/main-page/feedback-bg.jpg") no-repeat;
+    width: 1170px;
+    height: 492px;
+    border-radius: 16px;
+}
