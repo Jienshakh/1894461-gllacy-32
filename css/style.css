@@ -17,11 +17,12 @@
 * {
     box-sizing: border-box;
 }
-
+    
 body {
     font-family: "Inter", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 22px;
     background-color: #FEAFC3;
     color: #2D3440;
 }
@@ -29,6 +30,26 @@ body {
 a {
     text-decoration:none;
     color: #2D3440;    
+}
+.product-name {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.product-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.gifts-title {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.gift-title {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .advantages {
@@ -74,13 +95,27 @@ a {
     color: #565C66;
 }
 
-.delivery-form-container p:first-child {}
+.delivery-form-container > p {
+    color: #565C66;
+}
 
 .feedback {
     background: #ffffff url("../img/feedback-bg.jpg") no-repeat center;
     width: 1170px;
     height: 492px;
     border-radius: 16px;
+    font-style: normal;
+}
+
+.feedback-form-container span {
+    font-style: normal;
+}
+
+.about-text, .contacts-address-phone {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .product-card-description {
