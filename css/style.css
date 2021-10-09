@@ -26,10 +26,19 @@ body {
     color: #2D3440;
 }
 
+a {
+    text-decoration:none;
+    color: #2D3440;    
+}
+
 .advantages {
     background: #ffffff url("../img/advantages-border.jpg") no-repeat center;
     width: 1170px;
     height: 480px;
+}
+
+.advantages-description {
+    color: #565C66;
 }
 
 .blog {
@@ -39,11 +48,19 @@ body {
     border-radius: 16px;
 }
 
+.blog-title {
+    color: #565C66;
+}
+
 .subscription {
     background: #ffffff url("../img/subscription-bg.jpg") no-repeat center;
     width: 570px;
     height: 220px;
     border-radius: 16px;
+}
+
+.subscription-description {
+    color: #565C66;
 }
 
 .delivery {
@@ -53,9 +70,19 @@ body {
     border-radius: 16px;
 }
 
+.delivery-description {
+    color: #565C66;
+}
+
+.delivery-form-container p:first-child {}
+
 .feedback {
     background: #ffffff url("../img/feedback-bg.jpg") no-repeat center;
     width: 1170px;
     height: 492px;
     border-radius: 16px;
+}
+
+.product-card-description {
+    color: #565C66;
 }
