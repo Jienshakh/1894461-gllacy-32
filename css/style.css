@@ -118,6 +118,33 @@ a {
     line-height: 24px;
 }
 
+.product-card-name {
+    font-size: 20px;
+    line-height: 24px;
+}
+
 .product-card-description {
     color: #565C66;
+    text-align: center;
 }
+
+.product-card-price {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.catalog-title {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.catalog-products {
+    font-size: 14px;
+    line-height: 20px;
+}
+
