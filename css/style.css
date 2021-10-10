@@ -28,9 +28,10 @@ body {
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
     color: #2D3440;    
 }
+
 .product-name {
     font-size: 36px;
     line-height: 46px;
@@ -95,7 +96,7 @@ a {
     color: #565C66;
 }
 
-.delivery-form-container > p {
+.delivery-form-description {
     color: #565C66;
 }
 
@@ -111,7 +112,8 @@ a {
     font-style: normal;
 }
 
-.about-text, .contacts-address-phone {
+.about-text, 
+.contacts-address-phone {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
