@@ -47,9 +47,11 @@
     <main class="main-index">
       <h1 class="visually-hidden">Магазин мороженного GllaycyShop</h1>
       <section class="main-products">
-        <h2 class="product-name">Нежный пломбир с клубничным джемом</h2>
-        <p class="product-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p> 
-        <a class="product-order-button btn" href="#">Заказать</a>
+        <div class="product-order-wrapper">
+          <h2 class="product-name">Нежный пломбир с клубничным джемом</h2>
+          <p class="product-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p> 
+          <a class="product-order-button btn" href="#">Заказать</a>
+        </div>
         <img class="product-slider-photo" src="img/strawberry-lg.png" alt="Нежный пломбир с клубничным джемом">
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее мороженное</span>
@@ -59,57 +61,65 @@
         </button>
         <img class="product-slider-photo-next" src="img/creamy-sm.png" alt="Сливочное мороженое со вкусом банана">
         <img class="product-slider-photo-next" src="img/caramel-sm.png" alt="Карамельный пломбир с маршмеллоу">
-        <ol class="products-list-pagination">
-          <li class="product-item">
-            <button class="product-list-pagiation-button product-list-pagination-button-current" type="button">
-              <span class="visually-hidden">Мороженко 1</span>
-            </button>           
-          </li>
-          <li class="product-item">
-            <button class="product-list-pagiation-button" type="button">
-              <span class="visually-hidden">Мороженко 2</span>
-            </button> 
-          </li>
-          <li class="product-item">
-            <button class="product-list-pagiation-button" type="button">
-              <span class="visually-hidden">Мороженко 3</span>
-            </button> 
-          </li>
-        </ol>
-        <section class="main-social">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="main-social-list">
-            <li class="main-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">VK</span>
-              </a>
+        <div class="pagination-social-wrapper">
+          <ol class="products-list-pagination">
+            <li class="product-item">
+              <button class="product-list-pagiation-button product-list-pagination-button-current" type="button">
+                <span class="visually-hidden">Мороженко 1</span>
+              </button>           
             </li>
-            <li class="main-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
+            <li class="product-item">
+              <button class="product-list-pagiation-button" type="button">
+                <span class="visually-hidden">Мороженко 2</span>
+              </button> 
             </li>
-            <li class="main-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Instagram</span>
-              </a>
+            <li class="product-item">
+              <button class="product-list-pagiation-button" type="button">
+                <span class="visually-hidden">Мороженко 3</span>
+              </button> 
             </li>
-          </ul>
-        </section>
+          </ol>
+          <section class="main-social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <ul class="main-social-list">
+              <li class="main-social-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </li>
+              <li class="main-social-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="main-social-item">
+                <a class="button" href="#">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
       <section class="gifts">
         <h2 class="gifts-title">Заказывайте мороженое и получайте подарки!</h2>
-        <div class="gift">
-          <h3 class="gift-title">Малинка даром</h3>
-          <p class="gift-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="get-gift-button btn" href="#">Хочу подарок</a>
-          <img class="gift-photo" src="img/raspberry.png" alt="Малинка">
-        </div>
-        <div class="gift">
-          <h3 class="gift-title">Маршмеллоу даром</h3>
-          <p class="gift-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-          <a class="get-gift-button btn" href="#">Хочу подарок</a>
-          <img class="gift-photo" src="img/marshmallow.png" alt="Маршмеллоу">
+        <div class="gifts-wrapper">
+          <div class="gift">
+            <div class="gift-wrapper">
+              <h3 class="gift-title">Малинка даром</h3>
+              <p class="gift-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="get-gift-button btn" href="#">Хочу подарок</a>
+            </div>
+            <img class="gift-photo" src="img/raspberry.png" alt="Малинка">
+          </div>
+          <div class="gift">
+            <div class="gift-wrapper">
+              <h3 class="gift-title">Маршмеллоу даром</h3>
+              <p class="gift-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              <a class="get-gift-button btn" href="#">Хочу подарок</a>
+            </div>
+            <img class="gift-photo" src="img/marshmallow.png" alt="Маршмеллоу">
+          </div>
         </div>
       </section>
       <section class="popular-products">
@@ -188,24 +198,30 @@
           </ul>
         </div>
       </article>
-      <aside class="blog">
-        <h2 class="blog-title">Новое в нашем блоге</h2>
-        <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>        
-      </aside>
-      <section class="subscription">
-        <h2 class="visually-hidden">Форма подписки</h2>
-        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-           <label class="visually-hidden" for="subscription-mail">Ведите email</label> 
-          <input type="email" id="subscription-mail" placeholder="email@example.com" required>
-          <button class="subscription-button btn" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="blog-subscription-wrapper">
+        <aside class="blog">
+          <h2 class="blog-title">Новое в нашем блоге</h2>
+          <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>        
+        </aside>
+        <section class="subscription">
+          <div class="subscription-form-wrapper">
+            <!--<h2 class="visually-hidden">Форма подписки</h2> -->
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <label class="visually-hidden" for="subscription-mail">Ведите email</label> 
+              <input type="email" id="subscription-mail" placeholder="email@example.com" required>
+              <button class="subscription-button btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
       <section class="delivery">
-        <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин?
-           Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+        <div class="delivery-title-descr-wrapper">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин?
+            Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+          </div>
         <div class="delivery-form-container">
           <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -232,7 +248,7 @@
         </div>
       </section>
       <section class="feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <!--<h2 class="visually-hidden">Форма обратной связи</h2> -->
         <div class="feedback-form-container">
           <address class="contacts-address">
             <span>Адрес главного офиса и офлайн-магазина:</span>
@@ -246,46 +262,48 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">VK</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-menu">
-        <h2 class="visually-hidden">О нас</h2>
-        <ul class="footer-menu-list">
-          <li class="footer-menu-item">
-            <a href="#">
-              <strong class="info-partners">Для поставщиков</strong>
-            </a>
-          </li>
-          <li class="footer-menu-item"><a href="#"> Наши документы</a></li>
-          <li class="footer-menu-item"><a href="#">О производстве</a></li>
-          <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </section>
-      <section class="made-in">
-        <h2 class="visually-hidden">Разработчик сайта</h2>
-        <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="logo-htmlacademy" src="img/logo_htmlacademy.svg" alt="Логотип HtmlAcademy">
-        </a>          
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy © 2021</a></p>
-      </section>
+      <div class="page-footer-wrapper">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-menu">
+          <h2 class="visually-hidden">О нас</h2>
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item">
+              <a href="#">
+                <strong class="info-partners">Для поставщиков</strong>
+              </a>
+            </li>
+            <li class="footer-menu-item"><a href="#"> Наши документы</a></li>
+            <li class="footer-menu-item"><a href="#">О производстве</a></li>
+            <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </section>
+        <section class="made-in">
+          <h2 class="visually-hidden">Разработчик сайта</h2>
+          <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="logo-htmlacademy" src="img/logo_htmlacademy.svg" alt="Логотип HtmlAcademy">
+          </a>          
+          <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy © 2021</a></p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -8,12 +8,12 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo-link" href="index.html">
+        <a class="navigation-logo-link">
           <img class="page-header-logo" src="img/logo.svg" alt="Магазин вкусного мороженного GllaycyShop">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Каталог</a>
+            <a class="navigation-link" href="#">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -60,17 +60,17 @@
         <h1 class="catalog-title">Сливочное мороженое</h1>
       </header>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <!--<h2 class="visually-hidden">Список товаров с фильтрами</h2> -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
-          <p class="sorting-container">
+          <div class="sorting-container">
             <label class="sorting-title" for="sorting">Сортировка:</label>
             <select class="select-control" name="sorting" id="sorting">
               <option value="popular">По популярности</option>
               <option value="rating">По Рейтингу</option>
               <option value="price">По цене</option>
             </select>
-          </p>
-          <p class="price-container">
+          </div>
+          <div class="price-container">
             <label class="price-title">Цена: 100 ₽ – 500 ₽:</label>
             <button class="range-toggle toggle-min" type="button"> 
               <span class="visually-hidden">Изменить минимальную цену</span>
@@ -84,9 +84,9 @@
             <label class="catalog-filter-label">
               до <input class="catalog-filter-input" type="number" name="max-price">
             </label>
-          </p>
-          <p class="fat-container">
-            <label class="fat-title">Жирность:</label>
+          </div>
+          <div class="fat-container">
+            <span class="fat-title">Жирность:</span>
             <ul class="fat-list">
               <li class="fat-list">
                 <label class="control">
@@ -113,8 +113,8 @@
                 </label>
               </li>
             </ul>
-          </p>
-          <p class="fillers-container">
+          </div>
+          <div class="fillers-container">
             <label class="fillers">Наполнители:</label>
             <ul class="fillers-list">
               <li class="fillers-item">
@@ -138,11 +138,11 @@
                 <span class="control-label">джемы</span>
               </li>
             </ul>
-          </p>
+          </div>
           <button class="button" type="submit">Применить</button>
         </form>
       </section>
-      <section class="products">
+      <section class="popular-products">
         <h2 class="products-title">Выбор мороженного</h2>
         <ul class="products-list">
           <li class="product-card">            
@@ -200,8 +200,8 @@
               <span class="visiblly hidden">Купить</span>
             </a>
           </li>
-          <li class="products-card">
-            <a href="#" class="products-card-link">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
               <img src="img/icecream/banana.jpg" alt="Сливочный пломбир с банановым вкусом">
               <h3 class="product-card-name">Банан</h3>
               <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
@@ -211,8 +211,8 @@
               <span class="visiblly hidden">Купить</span>
             </a>
           </li>
-          <li class="products-card">
-            <a href="#" class="products-card-link">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
               <img src="img/icecream/chocolate.jpg" alt="Классический шоколадный пломбир">
               <h3 class="product-card-name">Шоколадка</h3>
               <p class="product-card-description">Классический шоколадный пломбир</p>
@@ -222,8 +222,8 @@
               <span class="visually hidden">Купить</span>
             </a>
           </li>
-          <li class="products-card">
-            <a href="#" class="products-card-link">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
               <img src="img/icecream/strawberry.jpg" alt="Сливочный пломбир с клубничным вкусом">
               <h3 class="product-card-name">Клубничка</h3>
               <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
@@ -244,8 +244,8 @@
               <span class="visiblly hidden">Купить</span>
             </a>
           </li>
-          <li class="products-card">
-            <a href="#" class="products-card-link">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
               <img src="img/icecream/menthol.jpg" alt="Сливочный пломбир с ментоловым сиропом">
               <h3 class="product-card-name">Ментол</h3>
               <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
@@ -255,8 +255,8 @@
               <span class="visiblly hidden">Купить</span>
             </a>
           </li>
-          <li class="products-card">
-            <a href="#" class="products-card-link">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
               <img src="img/icecream/nut.jpg" alt="Фисташковый пломбир с шоколадным сиропом">
               <h3 class="product-card-name">Орешек</h3>
               <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
@@ -266,8 +266,8 @@
               <span class="visually hidden">Купить</span>
             </a>
           </li>
-          <li class="products-card">
-            <a href="#" class="products-card-link">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
               <img src="img/icecream/brulee.jpg" alt="Классическое крем-брюле">
               <h3 class="product-card-name">Крем-брюле</h3>
               <p class="product-card-description">Классическое крем-брюле</p>
@@ -278,87 +278,91 @@
             </a>
           </li>
         </ul>
-        <button class="btn pagination-show-more">Показать ещё</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
+        <div class="pagination-wrapper">
+          <button class="btn pagination-show-more">Показать ещё</button>
+          <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">
-                <span class="visually-hidden">1</span>
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
               </a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link">
-                <span class="visually-hidden">2</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">
-                <span class="visually-hidden">3</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">
-                <span class="visually-hidden">4</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">
-                <span class="visually-hidden">5</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-        </ul>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">
+                  <span class="visually-hidden">1</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">
+                  <span class="visually-hidden">2</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">
+                  <span class="visually-hidden">3</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">
+                  <span class="visually-hidden">4</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">
+                  <span class="visually-hidden">5</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">VK</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-menu">
-        <h2 class="visually-hidden">О нас</h2>
-        <ul class="footer-menu-list">
-          <li class="footer-menu-item">
-            <a href="#">
-              <strong class="info-partners">Для поставщиков</strong>
-            </a>
-          </li>
-          <li class="footer-menu-item"><a href="#">Наши документы</a></li>
-          <li class="footer-menu-item"><a href="#">О производстве</a></li>
-          <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </section>
-      <section class="made-in">
-        <h2 class="visually-hidden">Разработчик сайта</h2>
-        <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="logo-htmlacademy" src="img/logo_htmlacademy.svg" alt="Логотип HtmlAcademy">
-        </a>       
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy © 2021</a></p>
-      </section>
+      <div class="page-footer-wrapper">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-menu">
+          <h2 class="visually-hidden">О нас</h2>
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item">
+              <a href="#">
+                <strong class="info-partners">Для поставщиков</strong>
+              </a>
+            </li>
+            <li class="footer-menu-item"><a href="#"> Наши документы</a></li>
+            <li class="footer-menu-item"><a href="#">О производстве</a></li>
+            <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </section>
+        <section class="made-in">
+          <h2 class="visually-hidden">Разработчик сайта</h2>
+          <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="logo-htmlacademy" src="img/logo_htmlacademy.svg" alt="Логотип HtmlAcademy">
+          </a>          
+          <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy © 2021</a></p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
