@@ -32,6 +32,9 @@ body {
     background-color: #FEAFC3;
     color: #2D3440;
     min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -65,6 +68,10 @@ a {
 .navigation-user {
     width: 418px;
     margin-left: auto;
+}
+
+.main-index {
+    flex: 1;
 }
 
 .main-products {
@@ -421,6 +428,7 @@ a {
 .page-footer {
     font-size: 14px;
     line-height: 20px;
+    flex-shrink: 0;
 }
 
 .page-footer-wrapper {
