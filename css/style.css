@@ -136,9 +136,9 @@ a {
     overflow: hidden;
 }
 
-.gift-wrapper > div:nth-child(2n) {
+.gift-item-marshmallow {
     margin-right: 0;
-    padding: 40px 7px 0px 40px;
+    padding-left:7px;
 }
 
 .gift-item-photo {
@@ -146,7 +146,7 @@ a {
     margin-top: -12px;
 }
 
-.gift-wrapper > div:nth-child(2n) .gift-item-photo {
+.gift-item-photo-marshmallow {
     margin-left: -3px;;
     margin-top: -21px;
 }
@@ -181,7 +181,6 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0;
     flex-wrap: wrap;
 }
 
@@ -211,7 +210,6 @@ a {
     background-size: cover;
     margin-bottom: 80px;
     border-radius: 16px;
-    overflow: auto;
     padding: 24px;
 }
 
@@ -219,11 +217,7 @@ a {
     margin: 0;
     background-color: #FCFCFC;
     border-radius: 16px;
-    overflow: auto;
-}
-
-.advantages-title {
-    margin: 56px 63px;
+    padding: 56px 40px;
 }
 
 .advantages-list {
@@ -300,7 +294,7 @@ a {
     padding: 64px 64px 64px 100px;
 }
 
-.delivery-title-descr-wrapper {
+.delivery-wrapper {
     width: 371px;
 }
 
