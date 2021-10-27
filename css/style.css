@@ -22,7 +22,10 @@ html {
     width: 100%;
     margin: 0 auto;
 }
+
+/* ************************************* BODY STYLES ********************************** */
     
+/* ******************** COMMON STYLES ********************* */
 body {
     margin: 0;
     font-family: "Inter", "Arial", sans-serif;
@@ -53,6 +56,8 @@ a {
     margin: 0 auto;
 }
 
+/* ******************** COMMON HEADER STYLES ********************* */
+
 .navigation {
     display: flex;
 }
@@ -69,6 +74,8 @@ a {
     width: 418px;
     margin-left: auto;
 }
+
+/* ******************** INDEX (SOME CATALOG) STYLES ********************* */
 
 .main-index {
     flex: 1;
@@ -188,6 +195,10 @@ a {
     width: 270px;
     background-color: #FCFCFC;
     border-radius: 8px;
+}
+
+.product-card-catalog {
+    margin-bottom: 90px;
 }
 
 .product-card-name {
@@ -352,7 +363,9 @@ a {
     line-height: 24px;
 }
 
-/* .breadcrumbs-link {
+/* ******************** CATALOG STYLES ********************* */
+
+.breadcrumbs-link {
     font-size: 14px;
     line-height: 20px;
 }
@@ -360,6 +373,8 @@ a {
 .catalog-title {
     font-size: 32px;
     line-height: 46px;
+    margin-top: 16px;
+    margin-bottom: 40px;
 }
 
 .catalog-products {
@@ -367,6 +382,7 @@ a {
     line-height: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 48px;
 }
 
 .catalog-filter {
@@ -417,7 +433,9 @@ a {
 .pagination {
     display: flex;
     margin-left: 303px;
-}  */
+}
+
+/* ******************** FOOTER STYLES ********************* */
 
 .page-footer {
     font-size: 14px;
