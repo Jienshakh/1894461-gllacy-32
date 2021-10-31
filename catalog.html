@@ -6,8 +6,8 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <header class="page-header container">
-      <nav class="navigation">
+    <header class="page-header">
+      <nav class="navigation container">
         <a class="navigation-logo-link" href="index.html">
           <img class="page-header-logo" src="img/logo.svg" alt="Магазин вкусного мороженного GllaycyShop">
         </a>
@@ -23,7 +23,7 @@
           </li>
         </ul>
         <ul class="navigation-user navigation-list clear-list">
-          <li class="navigation-list">
+          <li class="navigation-items">
             <a class="header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>          
           <li class="navigation-item">
@@ -44,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index main-catalog">
       <header class="inner-header container">
         <ul class="breadcrumbs clear-list">
           <li class="breadcrumbs-item">
@@ -60,11 +60,11 @@
         <h1 class="catalog-title">Сливочное мороженое</h1>
       </header>
       <section class="catalog-products container">
-        <!--<h2 class="visually-hidden">Список товаров с фильтрами</h2> -->
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
           <div class="sorting-container">
             <label class="sorting-title" for="sorting">Сортировка:</label>
-            <select class="select-control" name="sorting" id="sorting">
+            <select class="select-control background-filter-item" name="sorting" id="sorting">
               <option value="popular">По популярности</option>
               <option value="rating">По Рейтингу</option>
               <option value="price">По цене</option>
@@ -87,28 +87,28 @@
           </div>
           <div class="fat-container">
             <span class="fat-title">Жирность:</span>
-            <ul class="fat-list clear-list">
+            <ul class="fat-list clear-list background-filter-item">
               <li class="fat-list">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="0%">
+                  <input class="control-input" type="radio" name="product-group" value="0%">
                   <span class="control-label">0%</span>
                 </label>
               </li>
               <li class="fat-list">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="10%" checked>
+                  <input class="control-input" type="radio" name="product-group" value="10%" checked>
                   <span class="control-label">10%</span>
                 </label>
               </li>
               <li class="fat-list">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="30%">
+                  <input class="control-input" type="radio" name="product-group" value="30%">
                   <span class="control-label">30%</span>
                 </label>
               </li>
               <li class="fat-list">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="over 30%">
+                  <input class="control-input" type="radio" name="product-group" value="over 30%">
                   <span class="control-label">свыше 30%</span>
                 </label>
               </li>
@@ -116,34 +116,34 @@
           </div>
           <div class="fillers-container">
             <label class="fillers">Наполнители:</label>
-            <ul class="fillers-list clear-list">
+            <ul class="fillers-list clear-list background-filter-item">
               <li class="fillers-item">
-                <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
+                <input class="control-input" type="checkbox" name="chocolate" checked>
                 <span class="control-label">шоколадные</span>
               </li>
               <li class="fillers-item">
-                <input class="visually-hidden control-input" type="checkbox" name="sugar" checked>
+                <input class="control-input" type="checkbox" name="sugar" checked>
                 <span class="control-label">сахарные присыпки</span>
               </li>
               <li class="fillers-item">
-                <input class="visually-hidden control-input" type="checkbox" name="fruit">
+                <input class="control-input" type="checkbox" name="fruit">
                 <span class="control-label">фрукты</span>
               </li>
               <li class="fillers-item">
-                <input class="visually-hidden control-input" type="checkbox" name="syroup">
+                <input class="control-input" type="checkbox" name="syroup">
                 <span class="control-label">сиропы</span>
               </li>
               <li class="fillers-item">
-                <input class="visually-hidden control-input" type="checkbox" name="jam">
+                <input class="control-input" type="checkbox" name="jam">
                 <span class="control-label">джемы</span>
               </li>
             </ul>
           </div>
-          <button class="button" type="submit">Применить</button>
+          <button class="button btn btn-filter" type="submit">Применить</button>
         </form>
       </section>
       <section class="popular-products container">
-        <!-- <h2 class="products-title">Выбор мороженного</h2> -->
+        <h2 class="products-title">Выбор мороженного</h2>
         <ul class="products-list clear-list">
           <li class="product-card">            
             <a href="#" class="product-card-link">
@@ -320,7 +320,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer container">
+    <footer class="page-footer footer-border-top container">
       <div class="page-footer-wrapper">
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>

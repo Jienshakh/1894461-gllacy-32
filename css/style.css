@@ -40,9 +40,54 @@ body {
     flex-direction: column;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: #2D3440;    
+}
+
+.btn {
+    font-family: inherit;
+    padding: 12px 32px;
+    color: #2D3440;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    background-clip: padding-box;
+  }
+
+ .btn-red {
+    color: #FCFCFC;
+    background-color: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+}
+
+.btn-filter {
+    padding: 8px 32px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.input-field {
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
 }
 
 .clear-list {
@@ -64,30 +109,44 @@ li.clear-margin-bottom {
 
 .navigation {
     display: flex;
+    width: 1170px;
 }
 
 .navigation-logo-link {
     width: 137px;
+    margin: 24px 16px 24px 0px;
 }
 
 .navigation-list {
-    width: 368px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 423px;
+}
+
+.navigation-link {
+    display: block;
+    padding: 8px 16px;
 }
 
 .navigation-user {
-    width: 418px;
+    max-width: 419px;
     margin-left: auto;
+    justify-content: flex-end;
+    
 }
 
 /* ******************** INDEX (SOME CATALOG) STYLES ********************* */
 
 .main-index {
-    flex: 1;
+    flex-grow: 1;
 }
 
 .main-products {
     display: flex;
     padding: 0;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 80px;
 }
@@ -121,6 +180,28 @@ li.clear-margin-bottom {
     display: flex;
     justify-content: space-between;
 }
+
+.products-list-pagination {
+    display: flex;
+}
+
+.product-item {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.main-social-list {
+    display: flex;
+    margin-right: 16px;
+}
+
+.main-social-item {
+    width: 24px;
+    height: 24px;;
+}
+
 
 .slider-button {
     width: 38px;
@@ -163,6 +244,9 @@ li.clear-margin-bottom {
 }
 
 .gift-title {
+    width: 443px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 32px;
     line-height: 46px;
     text-align: center;
@@ -348,6 +432,7 @@ li.clear-margin-bottom {
 .feedback-form-container {
     background-color: #FCFCFC;
     width: 343px;
+    padding: 40px;
     box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
 }
@@ -366,6 +451,20 @@ li.clear-margin-bottom {
 
 /* ******************** CATALOG STYLES ********************* */
 
+.main-catalog {
+    margin-top: 32px;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.breadcrumbs-item {
+    font-weight: 700;
+    margin-right: 28px;
+}
+
 .breadcrumbs-link {
     font-size: 14px;
     line-height: 20px;
@@ -375,6 +474,7 @@ li.clear-margin-bottom {
     font-size: 32px;
     line-height: 46px;
     margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -386,10 +486,18 @@ li.clear-margin-bottom {
     margin-bottom: 48px;
 }
 
+.background-filter-item {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 16px;
+}
+
 .catalog-filter {
     display: flex;
     width: 807px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .sorting-container {
@@ -442,6 +550,11 @@ li.clear-margin-bottom {
     font-size: 14px;
     line-height: 20px;
     flex-shrink: 0;
+    padding: 48px 14px 48px 4px;
+}
+
+.footer-border-top {
+    border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 .page-footer-wrapper {
@@ -465,7 +578,12 @@ li.clear-margin-bottom {
 .footer-menu-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.footer-menu-item{
+    display: block;
+    flex-grow: 1;
+    text-align: left;
 }
 
 .made-in {
