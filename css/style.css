@@ -136,6 +136,10 @@ li.clear-margin-bottom {
     
 }
 
+.header-phone {
+    font-weight: 700;
+}
+
 /* ******************** INDEX (SOME CATALOG) STYLES ********************* */
 
 .main-index {
@@ -153,18 +157,26 @@ li.clear-margin-bottom {
 
 .product-order-wrapper {
     width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .product-name {
     width: 470px;
     font-size: 36px;
     line-height: 46px;
+    margin-top: 0;
+    margin-bottom: 24px;
 }
 
 .product-description {
     width: 414px;
     font-size: 18px;
     line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    
 }
 
 .product-slider-photo {
@@ -199,7 +211,7 @@ li.clear-margin-bottom {
 
 .main-social-item {
     width: 24px;
-    height: 24px;;
+    height: 24px;
 }
 
 
@@ -226,6 +238,12 @@ li.clear-margin-bottom {
     background-color: #FF7799;
     border-radius: 16px;
     overflow: hidden;
+}
+
+.gift-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .gift-item-marshmallow {
@@ -257,6 +275,12 @@ li.clear-margin-bottom {
     font-size: 24px;
     line-height: 30px;
     margin: 0;
+    margin-bottom: 16px;
+}
+
+.gift-item-description {
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 .popular-products {
@@ -267,7 +291,7 @@ li.clear-margin-bottom {
     width: 527px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 95px;
     font-size: 32px;
     line-height: 46px;
 }
@@ -280,25 +304,55 @@ li.clear-margin-bottom {
 }
 
 .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 270px;
+    padding: 0px 40px 28px 40px;
     background-color: #FCFCFC;
     border-radius: 8px;
     margin-bottom: 90px;
 }
 
+.product-card-link img {
+    display:block;
+    margin: 0 auto;
+    margin-top: -51px;
+    margin-bottom: 16px;
+    border-radius: 84px;
+}
+
 .product-card-name {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .product-card-description {
     color: #565C66;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .product-card-price {
     font-size: 20px;
     line-height: 24px;
+    margin-right: auto;
+}
+
+.product-card-button {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-color: #FF2F64;
+    border-radius: 26px;
+    background-image: url("../img/Cart-add.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8px;
 }
 
 .advantages {
@@ -379,6 +433,12 @@ li.clear-margin-bottom {
     padding: 26px;
 }
 
+.subscription-form .input-field {
+    padding: 14px 16px;
+    width: 332px;
+    margin-right: auto;
+}
+
 .delivery {
     background: #ffffff url("../img/delivery-bg.jpg");
     background-size: cover;
@@ -415,10 +475,67 @@ li.clear-margin-bottom {
     padding: 40px 40px 42px 40px;
     box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
+    display: flex;
+    flex-wrap:  wrap;
+}
+
+.delivery-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 420px;
+}
+
+.delivery-form label {
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.delivery-form .info {
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/Info.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 7px;
+    vertical-align: super;
+}
+
+.delivery-form .input-field {
+    display: block;
+    margin-top: 8px;
+    padding: 14px 16px;
+    width: 100%;
 }
 
 .delivery-form-description {
     color: #565C66;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.delivery-form-date {
+    flex-basis: 28%;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+.delivery-form-phone {
+    flex-grow: 1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.delivery-form-address {
+    flex-grow: 1;
+    margin: 0; 
+    margin-bottom: 32px;
+}
+
+.button-delivery {
+    margin: 0 auto;
 }
 
 .feedback {
@@ -441,12 +558,32 @@ li.clear-margin-bottom {
     font-style: normal;
 }
 
-.about-text, 
+.adress-text, 
 .contacts-address-phone {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 12px;
+}
+
+.contacts-address > * {
+    display: block;
+}
+
+.contacts-address-title {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.adress-text {
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.feedback-button {
+    margin-top: 32px;
 }
 
 /* ******************** CATALOG STYLES ********************* */
@@ -488,7 +625,7 @@ li.clear-margin-bottom {
 
 .background-filter-item {
     background-color: rgba(252, 252, 252, 0.3);
-    border: 0px;
+    border: 0;
     border-radius: 20px;
     padding: 10px 16px;
 }
@@ -542,7 +679,25 @@ li.clear-margin-bottom {
 .pagination {
     display: flex;
     margin-left: 303px;
+    align-items: center;
+    gap: 16px;
 }
+
+.pagination-page-activ {
+    background-color: #FCFCFC;
+    border-radius: 50px;
+    padding: 2px 8px;
+    margin: 9px 0px;
+}
+
+/* .pagination-next {
+    background-image: url("../img/next-page.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    padding: 3.33px 4.64px 3.32px 6.66px;
+} */
 
 /* ******************** FOOTER STYLES ********************* */
 
@@ -581,13 +736,14 @@ li.clear-margin-bottom {
 }
 
 .footer-menu-item{
-    display: block;
-    flex-grow: 1;
-    text-align: left;
+    width: 40%;
+    white-space: nowrap;
+    margin-right: 24px;
+    margin-bottom: 8px;
 }
 
 .made-in {
-    width: 193px;
+    width: 210px;
 }
 
 .about-text {
