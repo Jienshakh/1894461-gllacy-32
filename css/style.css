@@ -297,10 +297,11 @@ li.clear-margin-bottom {
 }
 
 .products-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    column-gap: 30px;
+    row-gap: 91px;
+    margin-bottom: 57px;
 }
 
 .product-card {
@@ -311,7 +312,6 @@ li.clear-margin-bottom {
     padding: 0px 40px 28px 40px;
     background-color: #FCFCFC;
     border-radius: 8px;
-    margin-bottom: 90px;
 }
 
 .product-card-link img {
