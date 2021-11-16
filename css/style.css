@@ -55,7 +55,7 @@ a {
     text-decoration: none;
     color: #2D3440;
     cursor: pointer;
-    display: block;   
+    display: block; 
 }
 
 .btn {
@@ -811,11 +811,29 @@ li.clear-margin-bottom {
 .breadcrumbs-item {
     font-weight: 700;
     margin-right: 28px;
+    position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    position: absolute;
+    top: 7.5px;
+    right: -18px;
+    width: 7px;
+    height: 6px;
+    background-image: url("../img/Union.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
 }
 
 .breadcrumbs-link {
     font-size: 14px;
     line-height: 20px;
+    border-bottom: 1px solid #2D3440;
+}
+
+.breadcrumbs-link-current {
+    border-color: transparent;
 }
 
 .catalog-title {
