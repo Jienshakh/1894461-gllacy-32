@@ -581,17 +581,60 @@ li.clear-margin-bottom {
     padding: 56px 40px;
 }
 
+.advantages-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 46px
+}
+
 .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 442px 442px;
+    padding-left: 64px;
+    row-gap: 40px;
+    
 }
 
 .advantages-item {
-    width: 490px;
+    width: 442px;
+    position: relative;
+}
+
+.advantages-item:nth-child(2n) {
+    margin-left: 94px
+}
+
+.advantages-item::before {
+    position: absolute;
+    left: -64px;
+    width: 48px;
+    height: 48px;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advantages-item-equipment::before {
+    background-image: url("../img/icecream.svg");
+}
+
+.advantages-item-provider::before {
+    background-image: url("../img/caw.svg");
+}
+
+.advantages-item-quality::before {
+    background-image: url("../img/leaf.svg");
+}
+
+.advantages-item-deliver::before {
+    background-image: url("../img/thermometer.svg");
 }
 
 .advantages-description {
     color: #565C66;
+    margin: 0;
 }
 
 .blog-subscription-wrapper {
