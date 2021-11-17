@@ -72,30 +72,38 @@
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
           <div class="sorting-container">
-            <label class="sorting-title" for="sorting">Сортировка:</label>
+            <label class="catalog-filter-title" for="sorting">Сортировка:</label>
             <select class="select-control background-filter-item" name="sorting" id="sorting">
               <option value="popular">По популярности</option>
               <option value="rating">По Рейтингу</option>
               <option value="price">По цене</option>
             </select>
           </div>
-          <div class="price-container">
-            <label class="price-title">Цена:</label>
-            <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-            </label>
-            <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-            </label>
-            <button class="range-toggle toggle-min" type="button"> 
-              <span class="visually-hidden">Изменить минимальную цену</span>
-            </button>
-            <button class="range-toggle toggle-max">
-              <span class="visually-hidden">Изменить максимальную цену</span>
-            </button>
+          <div class="price-container range">
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-title">Цена:</label>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" value="100" name="min-price"> ₽ -
+              </label>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" value="500" name="max-price"> ₽
+              </label>
+            </div>              
+            <div class="background-filter-item range-scale-container">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 40px; width: 56px">
+                  <button class="range-toggle toggle-min" type="button"> 
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="fat-container">
-            <span class="fat-title">Жирность:</span>
+            <span class="catalog-filter-title">Жирность:</span>
             <ul class="fat-list clear-list background-filter-item">
               <li class="fat-list">
                 <label class="control">
@@ -124,7 +132,7 @@
             </ul>
           </div>
           <div class="fillers-container">
-            <label class="fillers">Наполнители:</label>
+            <label class="catalog-filter-title">Наполнители:</label>
             <ul class="fillers-list clear-list background-filter-item">
               <li class="fillers-item">
                 <input class="control-input" type="checkbox" name="chocolate" checked>
