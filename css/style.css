@@ -388,6 +388,7 @@ li.clear-margin-bottom {
 .pagination-social-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .products-list-pagination {
@@ -807,6 +808,7 @@ li.clear-margin-bottom {
 .delivery-form .info {
     width: 14px;
     height: 14px;
+    background-color: transparent;
     background-image: url("../img/Info.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -845,6 +847,7 @@ li.clear-margin-bottom {
     flex-grow: 1;
     margin: 0; 
     margin-bottom: 32px;
+    width: 100%;
 }
 
 .button-delivery {
@@ -966,6 +969,7 @@ li.clear-margin-bottom {
     width: 807px;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 16px;
 }
 
 .catalog-filter-title {
@@ -985,6 +989,16 @@ li.clear-margin-bottom {
     width: 196px;
     margin-right: 24px;
     
+}
+
+/* Control */
+.select-control {
+    width: 100%;
+    font: inherit;
+    background-image: url("../img/select-union.svg");
+    background-position: right 14px center;
+    background-repeat: no-repeat;
+    appearance: none;
 }
 
 .price-container {
@@ -1080,6 +1094,114 @@ li.clear-margin-bottom {
 .fat-list {
     display: flex;
 }
+
+.fat-item,
+.fillers-item {
+    display: flex;
+    margin-right: 16px;
+}
+
+.fat-item:last-child,
+.fillers-item:last-child {
+    margin-right: 0;
+}
+
+/* Control */
+.control {
+    position: relative;
+    display: block;
+    padding-left: 24px;
+  }
+
+/* Mark */
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #2D3440;
+    cursor: pointer;
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    background-color: #242424;
+    border-radius: 50%;
+    content: "";
+}
+
+.control-input[type="radio"]:checked:hover + .control-mark::before {
+    background-color: #ffffff;
+}
+
+.control-input[type="radio"]:checked:hover + .control-mark {
+    border-color: #ffffff;
+}
+
+.control-input[type="radio"]:hover + .control-mark {
+    border-color: #ffffff;
+}
+
+.control-input[type="radio"]:checked:disabled + .control-mark::before {
+    background-color: #2D3440;
+}
+
+.control-input[type="radio"]:checked:disabled + .control-mark {
+    border
+.pagination-social-wrapper-color: #2D3440;
+}
+
+.control-input[type="radio"]:disabled + .control-mark {
+    border-color: #2D3440;
+}
+
+/* Checkbox */
+.control-input[type="checkbox"] + .control-mark {
+    border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    border: none;
+} 
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/check-on.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-mark::before {
+    background-image: url("../img/checkbox-hover.svg");
+}
+
+.control-input[type="checkbox"]:hover + .control-mark {
+    border-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked:disabled + .control-mark::before {
+    background-image: url("../img/checkbox-disabled.svg");
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark {
+    border-color: #2D3440;
+}
+
 
 .fillers-container {
     width: 596px;
