@@ -33,6 +33,14 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popover popover-search">
+              <div class="popover-content">
+                <h2 class="visually-hidden popover-title">Поле поиска</h2>
+                <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label for="search-field" class="visually-hidden">Введите данные для поиска</label>
+                  <input class="input-field" type="text" id="search-field" name="search-field" placeholder="Поиск по сайту">
+                </form>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-login" href="#">
@@ -41,6 +49,21 @@
               </svg>
               <span class="navigation-login">Вход</span>
             </a>
+            <div class="popover popover-login">
+              <div class="popover-content">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label for="login-field" class="visually-hidden">Введите email</label>
+                  <input class="input-field" type="text" id="login-field" name="login-field" placeholder="email@example.com">
+                  <label for="password-field" class="visually-hidden">Введите пароль</label>
+                  <input class="input-field" type="password" id="password-field" name="password-field" value="Пароль">
+                  <button class="login-button btn btn-red" type="submit">Войти</button>
+                  <div class="popover-link">
+                    <a class="reset-password-page" href="#">Забыли пароль?</a>
+                    <a class="registration-page" href="#">Регистрация</a>
+                  </div>
+                </form>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-card" href="#">
@@ -49,6 +72,10 @@
               </svg>
               <span class="navigation-card">Пусто</span>
             </a>
+            <div class="popover popover-cart-empty">
+              <div class="popover-content">
+                <h2 class="popover-title">Ваша корзина пока пуста</h2>
+            </div>
           </li>
         </ul>
       </nav>
