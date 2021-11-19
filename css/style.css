@@ -1444,6 +1444,13 @@ input[name="password-field"] {
     top: 40px;
 }
 
+.popover-cart .popover-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .popover-cart .popover-title {
     font-size: 24px;
     line-height: 30px;
@@ -1455,10 +1462,16 @@ input[name="password-field"] {
     grid-template-columns: 1fr 164px 103px 1fr;
 }
 
+.cart-item + .cart-item {
+    margin-top: 24px;
+}
+
+
 .cart-item-photo {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     padding-right: 16px;
+    
 }
 
 .cart-item-title {
@@ -1510,9 +1523,31 @@ input[name="password-field"] {
 }
 
 .cart-item-button::after {
-    transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) ;
 }
 
 .cart-item-button::before {
-    transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) ;
+}
+
+.horizontal-line {
+    border: none;
+    width: 100%;
+    background-color: #E7E7E7;
+    height: 1px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.cart-items-btn {
+    padding: 12px 32px;
+}
+
+.cart-items-total-price {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D3440;
+    font-weight: 700;
+    margin: 0;
 }
