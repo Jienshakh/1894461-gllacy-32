@@ -37,8 +37,10 @@
               <div class="popover-content">
                 <h2 class="visually-hidden popover-title">Поле поиска</h2>
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label for="search-field" class="visually-hidden">Введите данные для поиска</label>
-                  <input class="input-field" type="text" id="search-field" name="search-field" placeholder="Поиск по сайту">
+                  <p class="field-group">
+                    <label for="search-field" class="visually-hidden">Введите данные для поиска</label>
+                    <input class="input-field" type="text" id="search-field" name="search-field" placeholder="Поиск по сайту">  
+                  </p>
                 </form>
             </div>
           </li>
@@ -53,10 +55,14 @@
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label for="login-field" class="visually-hidden">Введите email</label>
-                  <input class="input-field" type="text" id="login-field" name="login-field" placeholder="email@example.com">
-                  <label for="password-field" class="visually-hidden">Введите пароль</label>
-                  <input class="input-field" type="password" id="password-field" name="password-field" value="Пароль">
+                  <p class="field-group">
+                    <label for="login-field" class="visually-hidden">Введите email</label>
+                    <input class="input-field" type="text" id="login-field" name="login-field" placeholder="email@example.com">
+                  </p>
+                  <p class="field-group">
+                    <label for="password-field" class="visually-hidden">Введите пароль</label>
+                    <input class="input-field" type="password" id="password-field" name="password-field" value="Пароль">
+                  </p>                
                   <button class="login-button btn btn-red" type="submit">Войти</button>
                   <div class="popover-link">
                     <a class="reset-password-page" href="#">Забыли пароль?</a>
@@ -93,10 +99,16 @@
             <img class="product-slider-photo" src="img/strawberry-lg.png" alt="Нежный пломбир с клубничным джемом">
           </div>
           <div class="slider-controls">
-            <button class="slider-button slider-prev" type="button">
+            <button class="slider-button slider-prev" type="button">              
+              <svg class="slider-button-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13526 0.864696C0.875566 0.604997 0.454511 0.604997 0.194813 0.864696C-0.0648862 1.12439 -0.0648862 1.54545 0.194813 1.80515L4.39609 6.00643L0.194774 10.2077C-0.0649247 10.4674 -0.0649247 10.8885 0.194774 11.1482C0.454473 11.4079 0.875527 11.4079 1.13523 11.1482L5.80394 6.47949C5.80489 6.47855 5.80583 6.47761 5.80678 6.47666C6.06648 6.21696 6.06648 5.79591 5.80678 5.53621L1.13526 0.864696Z"/>
+              </svg>                
               <span class="visually-hidden">Предыдущее мороженное</span>
             </button>
             <button class="slider-button slider-next" type="button">
+              <svg class="slider-button-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13526 0.864696C0.875566 0.604997 0.454511 0.604997 0.194813 0.864696C-0.0648862 1.12439 -0.0648862 1.54545 0.194813 1.80515L4.39609 6.00643L0.194774 10.2077C-0.0649247 10.4674 -0.0649247 10.8885 0.194774 11.1482C0.454473 11.4079 0.875527 11.4079 1.13523 11.1482L5.80394 6.47949C5.80489 6.47855 5.80583 6.47761 5.80678 6.47666C6.06648 6.21696 6.06648 5.79591 5.80678 5.53621L1.13526 0.864696Z"/>
+              </svg> 
               <span class="visually-hidden">Следующее мороженное</span>
             </button>
           </div>
@@ -154,7 +166,7 @@
             <div class="gift-item-wrapper">
               <h3 class="gift-item-title">Малинка даром</h3>
               <p class="gift-item-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="get-gift-button btn" href="#">Хочу подарок</a>
+              <a class="get-gift-button btn" href="#" disabled>Хочу подарок</a>
             </div>
             <img class="gift-item-photo" src="img/raspberry.png" alt="Малинка">
           </div>
@@ -266,9 +278,12 @@
             <h2 class="visually-hidden">Форма подписки</h2>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <label class="visually-hidden" for="subscription-mail">Ведите email</label> 
-              <input class="input-field" type="email" id="subscription-mail" placeholder="email@example.com" required>
+                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+                <p class="field-group subscription-field-group">
+                  <label class="visually-hidden" for="subscription-mail">Ведите email</label> 
+                  <input class="input-field" type="email" id="subscription-mail" placeholder="email@example.com" required>      
+                </p>
               <button class="subscription-button btn btn-red" type="submit">Отправить</button>
             </form>
           </div>
@@ -290,7 +305,7 @@
               </button>
               <input class="input-field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
             </p>
-            <p class="delivery-form-phone">
+            <p class="field-group delivery-form-phone">
               <label for="delivery-phone">Телефон</label>
               <input class="input-field" type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
             </p>
@@ -363,5 +378,30 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="full-name"></label>
+              <input class="input-field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group">
+              <label for="email-adress"></label>
+              <input class="input-field" type="text" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+            </p>
+            <p class="field-group">
+              <label for="comment"></label>
+              <textarea class="input-field feedback-comment-field" type="text" id="feedback-comment" name="feedback-comment" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="btn btn-red feedback-form-btn" type="submit">Отправить</button>
+          </form>
+        </section>        
+      </div>
+    </div>
   </body>
 </html>

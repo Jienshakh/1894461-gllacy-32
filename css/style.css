@@ -67,73 +67,76 @@ a {
     font-weight: 700;
     text-align: center;
     background-color: #FCFCFC;
-    border: 4px solid rgba(252, 252, 252, 0.4);
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
     border-radius: 26px;
     background-clip: padding-box;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
     background: rgba(252, 252, 252, 0.4);
-    border: 4px solid #FCFCFC;
-    box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+    box-shadow: 0 0 0 4px #FCFCFC;
 }
 
 .btn:focus {
-    border-color: transparent; 
     box-shadow: 0 0 0 2px #2D3440;
+
+    outline: none;
 }
 
-.btn:disabled {
+/* .btn:disabled {
     color: #B9B9B9;
     background: #E7E7E7;
-}
+} */
 
  .btn-red {
     color: #FCFCFC;
     background-color: #FF2F64;
-    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
 }
 
 .btn-red:hover {
     color: #2D3440;
     background: rgba(252, 252, 252, 0.3);
-    border: 4px solid #FF2F64;
+    box-shadow: 0 0 0 4px #FF2F64;
 }
 
 .btn-red:focus {
-    border-color: transparent; 
+    color: #FCFCFC;
     box-shadow: 0 0 0 2px #2D3440;
+    background-color: #FF2F64;
+    outline: none;
 }
 
 .btn-red:disabled {
     color: #565C66;
     background: #B9B9B9;
-    border: 4px solid rgba(185, 185, 185, 0.3);
+    box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
 }
 
 .btn-filter {
     padding: 8px 32px;
     background-color: rgba(252, 252, 252, 0.3);
-    border: 2px solid #FCFCFC;
+    box-shadow: 0 0 0 2px #FCFCFC;
+    border: none;
     border-radius: 20px;
     align-self: flex-end;
 }
 
 .btn-filter:hover { 
     background: #FCFCFC;
-    border: 2px solid rgba(252, 252, 252, 0.3);
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
 .btn-filter:focus {
-    border: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
 }
 
 .btn-filter:disabled {
-    color: #2D3440;
-    background: rgba(252, 252, 252, 0.3);
     opacity: 0.4;
-    border: 2px solid #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.3);
+    box-shadow: 0 0 0 2px #FCFCFC;
 }   
 
 .input-field {
@@ -141,9 +144,17 @@ a {
     border-radius: 4px;
     font-family: inherit;
     font-size: 16px;
-    color: #B9B9B9;
+    color: #2D3440;
     padding: 14px 16px;
 }
+
+.input-field::-webkit-input-placeholder {
+    color: #B9B9B9;
+} 
+
+.input-field::-moz-placeholder {
+    color: #B9B9B9;
+} 
 
 .input-field:hover {
     border-color: #2D3440;
@@ -152,6 +163,30 @@ a {
 .input-field:focus {
     border: 1px solid #2D3440;
     box-shadow: 0 0 0 1px #2D3440;
+    outline: none;
+}
+
+.input-field-error {
+    border-color: #EA5454;
+}
+
+.input-field-error:focus {
+    border-color: #EA5454;
+    box-shadow: 0 0 0 1px #EA5454;
+}
+
+.input-field-error:hover {
+    border-color: #EA5454;
+    box-shadow: 0 0 0 1px #EA5454;
+}
+
+.input-field:disabled {
+    background-color: #E7E7E7;
+    color: rgba(45, 52, 64, 0.65);
+}
+
+.input-field:disabled:hover {
+    border-color: #B9B9B9;
 }
 
 .clear-list {
@@ -258,7 +293,6 @@ li.clear-margin-bottom {
 
 .navigation-link:hover {
     background-color: rgba(252,252,252, 0.5);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 26px;
 }
 
@@ -271,6 +305,7 @@ li.clear-margin-bottom {
 .navigation-link:active {
     background-color: rgba(252,252,252, 1);
     border-radius: 26px;
+    border-color: transparent;
 }
 
 .header-phone {
@@ -341,22 +376,61 @@ li.clear-margin-bottom {
 .slider-controls {
     position: absolute;
     top: 50%;
-    left: -19px;
-    right: -19px;
+    left: -23px;
+    right: -23px;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
 }
 
 .slider-button {
+    position: relative;
     width: 38px;
     height: 38px;
-    background-color: rgba(252, 252, 252, 0.3);;
-    background-image: url("../img/next.svg");
     background-position: center;
-    background-repeat: no-repeat;
+    background-color: rgba(252, 252, 252, 0.3);
     border: 2px solid #FCFCFC;
     border-radius: 26px;
+    cursor: pointer;
+}
+
+.slider-button-icon {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    fill: #FCFCFC;
+}
+
+.slider-button:hover {
+    background-color: rgba(252, 252, 252, 1);
+}
+
+.slider-button:hover .slider-button-icon  {
+    fill: #2D3440;
+}
+
+.slider-button:focus {
+    border-color: #2D3440;
+    outline: none;
+}
+
+.slider-button:focus .slider-button-icon  {
+    fill: #2D3440;
+}
+
+.slider-button:disabled {
+    border-color: rgba(252, 252, 252, 0.4);
+}
+
+.slider-button:disabled:hover {
+    border-color: rgba(252, 252, 252, 0.4);
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-button:disabled .slider-button-icon  {
+    fill: rgba(252, 252, 252, 0.4);
 }
 
 .slider-prev {
@@ -406,18 +480,28 @@ li.clear-margin-bottom {
 
 .product-list-pagiation-button {
     display: block;
-    width: 12px;
-    height: 12px;
-    background-color: #FCFCFC;
-    opacity: 0.3;
-    border: none;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 1px solid transparent;
     border-radius: 50%;
     cursor: pointer;
+    padding: 0;
 }
 
 .product-list-pagination-button-current {
-    opacity: 1;
+    background-color: rgba(252, 252, 252, 1);
 }
+
+.product-list-pagiation-button:hover {
+    border: 1px solid #FCFCFC;
+}
+
+.product-list-pagiation-button:focus {
+    border: 1px solid #2D3440;
+    outline: none;
+}
+
 
 .social-list {
     display: grid;
@@ -427,8 +511,7 @@ li.clear-margin-bottom {
 
 .social-item {
     width: 24px;
-    height: 24px;
-    
+    height: 24px;    
 }
 
 .social-item .button {
@@ -439,6 +522,7 @@ li.clear-margin-bottom {
     border: 2px solid rgba(252,252,252, 0.3);
     border-radius: 100px;
     box-sizing: content-box;
+    background-clip: content-box;
 }
 
 .social-item .button::before {
@@ -461,17 +545,16 @@ li.clear-margin-bottom {
     -webkit-mask-image: url("../img/insta.svg");
 }
 
-.social-item:hover .button::before  {
+.social-item .button:hover  {
     background-color: #2D3440;
 }
 
-.social-item:focus .button  {
+.social-item .button:focus  {
+    outline: none;
+    background-color: #2D3440;
     border-color: #2D3440;
 }
 
-.social-item:focus .button::before  {
-    background-color: #2D3440;
-}
 
 .gift {
     margin-bottom: 80px;
@@ -618,8 +701,15 @@ li.clear-margin-bottom {
     box-shadow: inset 0 0 0 2px #FF2F64;
 }
 
-.product-card-button:focus .card-icon {
+.product-card-button:focus,
+.product-card-button:active  {
+    background-color: #FF2F64;
     box-shadow: inset 0 0 0 2px #2D3440;
+}
+
+.product-card-button:focus .card-icon,
+.product-card-button:active .card-icon {
+    fill: #FCFCFC;
 }
 
 .product-card-button:disabled {
@@ -739,6 +829,13 @@ li.clear-margin-bottom {
     background: #ffffff url("../img/subscription-bg.jpg");
     width: 570px;
     border-radius: 16px;
+    
+}
+
+.subscription-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .subscription-description {
@@ -752,9 +849,12 @@ li.clear-margin-bottom {
     padding: 26px;
 }
 
-.subscription-form .input-field {
+.subscription-field-group {
     width: 332px;
-    margin-right: auto;
+}
+
+.subscription-form .input-field {
+    width: 100%;
 }
 
 .delivery {
@@ -1004,6 +1104,7 @@ li.clear-margin-bottom {
     border: 2px solid transparent;
     background-repeat: no-repeat;
     appearance: none;
+    outline: none;
 }
 
 .select-control:hover {
@@ -1238,38 +1339,57 @@ li.clear-margin-bottom {
     display: flex;
     margin-left: 303px;
     align-items: center;
-    gap: 16px;
+    gap: 5px;
+}
+
+.pagination-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid transparent;
 }
 
 .pagination-page-activ {
     background-color: #FCFCFC;
+    border: 1px solid #FCFCFC;
     border-radius: 50px;
-    padding: 2px 10px;
-    margin: 9px 0px;
+    text-align: center;
 }
 
 .pagination-item:first-of-type {
     transform: rotate(180deg);
 }
 
+.pagination-next,
 .pagination-prev {
-    background-image: url("../img/next-page.svg");
     background-position: center;
     background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     padding: 3.33px 4.64px 3.32px 6.66px;
+}
+
+.pagination-prev {
+    background-image: url("../img/next-page.svg");
     opacity: 0.2;
 }
 
 .pagination-next {
     background-image: url("../img/next-page.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
-    padding: 3.33px 4.64px 3.32px 6.66px;
 }
+
+.pagination-item:hover {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 1px solid #FCFCFC;
+}
+
+.pagination-item:focus {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 1px solid #2D3440;
+    outline: none;
+}
+
 
 /* ******************** FOOTER STYLES ********************* */
 
@@ -1550,4 +1670,80 @@ input[name="password-field"] {
     color: #2D3440;
     font-weight: 700;
     margin: 0;
+}
+
+/* ***************************** Modal windows ******************************** */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 52, 64, 0.3);
+    display: flex;
+}
+
+.modal-container-close {
+    display: none;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 62px 66px 64px;
+    background: #FCFCFC;
+    box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+}
+
+.modal-feedback {
+    width: 570px;
+}
+
+.modal-close-button {
+    position: absolute;
+    width: 12.16px;
+    height: 12.16px;
+    top: 20.92px;
+    right: 20.92px;
+    padding: 15px;
+    background-color: transparent;
+    background-image: url("../img/close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-title {
+    font-family: inherit;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.field-group {
+    margin: 0;
+}
+
+.field-group + .field-group {
+    margin-top: 16px;
+}
+
+.field-group .input-field {
+    width: 100%;
+}
+
+.feedback-form-btn {
+    margin-top: 32px;
+    align-self: flex-end;
+}
+
+.feedback-comment-field {
+    resize: none;
+    height: 149px;
 }
