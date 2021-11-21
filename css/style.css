@@ -674,7 +674,7 @@ li.clear-margin-bottom {
     width: 527px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-bottom: 110px;
     font-size: 32px;
     line-height: 46px;
 }
@@ -771,7 +771,7 @@ li.clear-margin-bottom {
 .advantages {
     background: #ffffff url("../img/advantages-border.jpg");
     background-size: cover;
-    margin-bottom: 80px;
+    margin-bottom: 82px;
     border-radius: 16px;
     padding: 24px;
 }
@@ -786,7 +786,7 @@ li.clear-margin-bottom {
 .advantages-title {
     text-align: center;
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 58px;
     font-size: 32px;
     line-height: 46px
 }
@@ -883,6 +883,7 @@ li.clear-margin-bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .subscription-description {
@@ -899,11 +900,11 @@ li.clear-margin-bottom {
 }
 
 .subscription-field-group {
-    width: 332px;
+    margin: 0;
 }
 
-.subscription-form .input-field {
-    width: 100%;
+.subscription-field-group .input-field {
+    width: 332px;
 }
 
 .subscription-button {
@@ -1876,7 +1877,7 @@ input[name="password-field"] {
     margin-bottom: 32px;
 }
 
-.field-group {
+.popover-field-group {
     margin: 0;
     width: 100%;
 }
@@ -1889,7 +1890,7 @@ input[name="password-field"] {
     margin-top: 14px;
 }
 
-.field-group .input-field {
+.popover-field-group .input-field {
     width: 100%;
     margin: 0;
 }

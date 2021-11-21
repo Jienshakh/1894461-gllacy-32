@@ -78,13 +78,13 @@
               <div class="popover-content">
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <p class="field-group">
+                  <p class="field-group popover-field-group">
                     <label for="login-field" class="visually-hidden">Введите email</label>
-                    <input class="input-field" type="text" id="login-field" name="login-field" placeholder="email@example.com">
+                    <input class="input-field popover-input-field" type="text" id="login-field" name="login-field" placeholder="email@example.com">
                   </p>
-                  <p class="field-group">
+                  <p class="field-group popover-field-group">
                     <label for="password-field" class="visually-hidden">Введите пароль</label>
-                    <input class="input-field" type="password" id="password-field" name="password-field" value="Пароль">
+                    <input class="input-field popover-input-field" type="password" id="password-field" name="password-field" value="Пароль">
                   </p>                
                   <button class="login-button btn btn-red" type="submit">Войти</button>
                   <div class="popover-link">
@@ -303,10 +303,10 @@
               <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-                <p class="field-group subscription-field-group">
-                  <label class="visually-hidden" for="subscription-mail">Ведите email</label> 
-                  <input class="input-field" type="email" id="subscription-mail" placeholder="email@example.com" required>      
-                </p>
+              <p class="subscription-field-group">
+                <label class="visually-hidden" for="subscription-mail">Ведите email</label> 
+                <input class="input-field" type="email" id="subscription-mail" placeholder="email@example.com" required>      
+              </p>
               <button class="subscription-button btn btn-red" type="submit">Отправить</button>
             </form>
           </div>
@@ -409,15 +409,15 @@
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
+            <p class="field-group popover-field-group">
               <label for="feedback-name"></label>
-              <input class="input-field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+              <input class="input-field popover-input-field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
             </p>
-            <p class="field-group">
+            <p class="field-group popover-field-group">
               <label for="feedback-email"></label>
-              <input class="input-field" type="text" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+              <input class="input-field popover-input-field" type="text" id="feedback-email" name="feedback-email" placeholder="email@example.com">
             </p>
-            <p class="field-group">
+            <p class="field-group popover-field-group">
               <label for="feedback-comment"></label>
               <textarea class="input-field feedback-comment-field" id="feedback-comment" name="feedback-comment" placeholder="В свободной форме"></textarea>
             </p>
