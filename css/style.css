@@ -22,7 +22,6 @@
     src: url("../fonts/inter-900.woff2") format("woff2");
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -555,7 +554,6 @@ a {
     outline: none;
 }
 
-
 .social-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -607,7 +605,6 @@ a {
     background-color: #2D3440;
     border-color: #2D3440;
 }
-
 
 .gift {
     margin-bottom: 80px;
@@ -778,7 +775,6 @@ a {
 .product-card-button:disabled .card-icon {
     fill: #565C66;
 }
-
 
 .advantages {
     background: #ffffff url("../img/advantages-border.jpg");
@@ -1427,7 +1423,6 @@ a {
     border-color: #2D3440;
 }
 
-
 .fillers-container {
     width: 596px;
     display: flex;
@@ -1489,7 +1484,6 @@ a {
     background-image: url("../img/next-page.svg");
 }
 
-
 .pagination-item:hover {
     background-color: rgba(252, 252, 252, 0.3);
     border: 1px solid #FCFCFC;
@@ -1500,13 +1494,11 @@ a {
     pointer-events: none;
 }
 
-
 .pagination-item:focus {
     background-color: rgba(252, 252, 252, 0.3);
     border: 1px solid #2D3440;
     outline: none;
 }
-
 
 /* ******************** FOOTER STYLES ********************* */
 
@@ -1602,23 +1594,8 @@ a {
     display: none;
 }
 
-.popover-catalog {
-    /* display: block;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.1s 0s, opacity 0.1s 0.1s linear;
-    -webkit-transition: visibility 0.1s 0s, opacity 0.1s 0.1s linear;
-    -moz-transition: visibility 0.1s 0s, opacity 0.1s 0.1s linear;
-    -o-transition: visibility 0.1s 0s, opacity 0.1s 0.1s linear; */
-}
-
 .navigation-item-catalog:hover .popover-catalog {
     display: block ;
-}
-
-.navigation-item-catalog:hover .popover-catalog {
-    /* visibility: visible;
-    opacity: 1; */
 }
 
 .popover-catalog {
@@ -1660,7 +1637,6 @@ a {
 .popover-catalog-item:active {
     background-color: #FF7799;
 }
-
 
 .popover-search {
     width: 356px;
