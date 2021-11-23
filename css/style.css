@@ -202,7 +202,7 @@ a {
     padding: 0;
   }
 
-li.clear-margin-bottom {
+.clear-margin-bottom {
     margin-bottom: 0;
 }
 
@@ -234,8 +234,6 @@ li.clear-margin-bottom {
     width: 423px;
     outline: none;
 }
-
-
 
 .navigation-link {
     display: block;
@@ -270,7 +268,7 @@ li.clear-margin-bottom {
 }
 
 .navigation-link-login .navigation-icon,
-.navigation-link-card .navigation-icon  {
+.navigation-link-card .navigation-icon {
     right: auto;
     left: 16px;
     margin: auto 0;
@@ -452,7 +450,7 @@ li.clear-margin-bottom {
     background-color: rgba(252, 252, 252, 1);
 }
 
-.slider-button:hover .slider-button-icon  {
+.slider-button:hover .slider-button-icon {
     fill: #2D3440;
 }
 
@@ -461,7 +459,7 @@ li.clear-margin-bottom {
     outline: none;
 }
 
-.slider-button:focus .slider-button-icon  {
+.slider-button:focus .slider-button-icon {
     fill: #2D3440;
 }
 
@@ -474,7 +472,7 @@ li.clear-margin-bottom {
     background-color: rgba(252, 252, 252, 0.3);
 }
 
-.slider-button:disabled .slider-button-icon  {
+.slider-button:disabled .slider-button-icon {
     fill: rgba(252, 252, 252, 0.4);
 }
 
@@ -600,11 +598,11 @@ li.clear-margin-bottom {
     -webkit-mask-image: url("../img/insta.svg");
 }
 
-.social-item .button:hover  {
+.social-item .button:hover {
     background-color: #2D3440;
 }
 
-.social-item .button:focus  {
+.social-item .button:focus {
     outline: none;
     background-color: #2D3440;
     border-color: #2D3440;
@@ -761,14 +759,16 @@ li.clear-margin-bottom {
 }
 
 .product-card-button:focus,
-.product-card-button:active  {
+.product-card-button:active {
     background-color: #FF2F64;
     box-shadow: inset 0 0 0 2px #2D3440;
+    outline: none;
 }
 
 .product-card-button:focus .card-icon,
 .product-card-button:active .card-icon {
     fill: #FCFCFC;
+    outline: none;
 }
 
 .product-card-button:disabled {
@@ -1050,6 +1050,11 @@ li.clear-margin-bottom {
 
 .working-hours {
     font-size: 14px;
+    margin: 0;
+}
+
+.contacts-address p {
+    font-style: normal;
 }
 
 .adress-text, 
@@ -1061,13 +1066,13 @@ li.clear-margin-bottom {
     margin-top: 12px;
 }
 
-.contacts-address > * {
-    display: block;
-}
-
 .contacts-address-title {
     margin: 0;
     margin-bottom: 12px;
+}
+
+.contacts-address p:nth-of-type(3) {
+    margin: 0;
 }
 
 .adress-text {
@@ -1332,8 +1337,8 @@ li.clear-margin-bottom {
 
 .control-input[type="radio"]:checked + .control-mark::before {
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 27%;
+    left: 24%;
     width: 6px;
     height: 6px;
     background-color: #242424;
@@ -1588,7 +1593,7 @@ li.clear-margin-bottom {
 
 /* ***********************Popaps and Modal windows **************************** */
 
-.popover  {
+.popover {
     position: absolute;
     background: #FCFCFC;
     border-radius: 4px;
