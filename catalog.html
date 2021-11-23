@@ -21,7 +21,7 @@
                   <hr class="popover-catalog-hr">
                   <ul class="popover-list popover-catalog-list clear-list">
                     <li class="popover-item popover-catalog-item">
-                      <a class="popover-link" href="#">Сливочное</a>
+                      <a class="popover-link  -current" href="#">Сливочное</a>
                     </li>
                     <li class="popover-item popover-catalog-item">
                       <a class="popover-link" href="#">Щербеты</a>
@@ -54,7 +54,7 @@
                 </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
-              <div class="popover popover-search">
+              <div class="popover popover-search"><!-- Для отображения popover нужно добавить класс .popover-open -->
                 <div class="popover-content">
                   <h2 class="visually-hidden popover-title">Поле поиска</h2>
                   <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -74,7 +74,7 @@
                 </svg>
                 <span class="navigation-login">Вход</span>
               </a>
-              <div class="popover popover-login">
+              <div class="popover popover-login"><!-- Для отображения popover нужно добавить класс .popover-open -->
                 <div class="popover-content">
                   <h2 class="popover-title">Личный кабинет</h2>
                   <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -99,12 +99,12 @@
               <a class="navigation-link navigation-link-card" href="#">
                 <span class="navigation-card">2 товара</span>
               </a>
-              <div class="popover popover-cart">
+              <div class="popover popover-cart"><!-- Для отображения popover нужно добавить класс .popover-open -->
                 <div class="popover-content">
                   <h2 class="popover-title">Корзина</h2>
                   <ul class="cart-items-list clear-list">
                     <li class="cart-item">
-                      <img class="cart-item-photo" src="/img/icecream/raspberry-sm.jpg" alt="Малинка">
+                      <img class="cart-item-photo" src="img/icecream/raspberry-sm.jpg" alt="Малинка">
                       <h3 class="cart-item-title">Малинка</h3>
                       <p class="cart-item-weight">1 кг х 310 ₽</p>
                       <p class="cart-item-price">310 ₽</p>
@@ -112,7 +112,7 @@
                       <span class="visually-hidden">Удалить из корзины</span>
                     </li>
                     <li class="cart-item">
-                      <img class="cart-item-photo" src="/img/icecream/bubblegum-sm.jpg" alt="Бабл-гам">
+                      <img class="cart-item-photo" src="img/icecream/bubblegum-sm.jpg" alt="Бабл-гам">
                       <h3 class="cart-item-title">Бабл-гам</h3>
                       <p class="cart-item-weight">1.5 кг х 320 ₽</p>
                       <p class="cart-item-price">480 ₽</p>
@@ -429,8 +429,8 @@
           <div class="pagination-wrapper">
             <button class="btn pagination-show-more">Показать ещё</button>
             <ul class="pagination clear-list">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-disabled">
+              <li class="pagination-item pagination-disabled">
+                <a class="pagination-link pagination-prev">
                   <span class="visually-hidden">Предыдущая страница</span>
                 </a>
               </li>
